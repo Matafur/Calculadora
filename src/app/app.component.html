@@ -1,36 +1,39 @@
-
-
-<div id="calculadora" class="col-12">
+<br><br><br>
+<div class="container" >
+   <h1>{{titulo}}</h1> 
+</div>
+<br>
+<div id="calculadora"  class="col-sm-7 col-md-7 col-lg-7 ">
   <div class="container" id="resultado">
       {{resultado}}
   </div>
-  <div class="container">
-      <button class="boton" id="reset" (click)="reset()">Reset</button>
-      <button class="boton" id="backspace" (click)="backspace()">←</button>
-      <button class="boton"  (click)="operacion('%')" >%</button>
-      <button id="operacion" (click)="operacion('/')" class="btn btn-warning">/</button>
+  <div class="container ">
+      <button class="boton col-sm-4 col-md-4 col-lg-4 " id="reset" (click)="reset()">Reset</button>
+      <button class="boton col-sm-4 col-md-4 col-lg-4" id="backspace" (click)="backspace()">←</button>
+      <button class="boton col-sm-4 col-md-4 col-lg-4"  (click)="operacion('%')" >%</button>
+      <button id="operacion" (click)="operacion('/')" class=" col-sm-4 col-md-4 col-lg-4">/</button>
   </div>
-  <div class="container">
-      <button class="boton" (click)="numero(7)" >7</button>
-      <button class="boton" (click)="numero(8)">8</button>
-      <button class="boton" (click)="numero(9)">9</button>
-      <button id="operacion" (click)="operacion('*')" class="btn btn-warning">*</button>
+  <div class="container ">
+      <button class="boton col-sm-4 col-md-4 col-lg-4" (click)="numero(7)" >7</button>
+      <button class="boton col-sm-4 col-md-4 col-lg-4" (click)="numero(8)">8</button>
+      <button class="boton col-sm-4 col-md-4 col-lg-4" (click)="numero(9)">9</button>
+      <button id="operacion" (click)="operacion('*')" class=" col-sm-4 col-md-4 col-lg-4">*</button>
   </div>
-  <div class="container">
-      <button class="boton" (click)="numero(6)">6</button>
-      <button class="boton" (click)="numero(5)">5</button>
-      <button class="boton" (click)="numero(4)">4</button>
-      <button id="operacion" (click)="operacion('-')" class="btn btn-warning">-</button>
+  <div class="container ">
+      <button class="boton col-sm-4 col-md-4 col-lg-4" (click)="numero(6)">6</button>
+      <button class="boton col-sm-4 col-md-4 col-lg-4" (click)="numero(5)">5</button>
+      <button class="boton col-sm-4 col-md-4 col-lg-4" (click)="numero(4)">4</button>
+      <button id="operacion" (click)="operacion('-')" class=" col-sm-4 col-md-4 col-lg-4">-</button>
   </div>
-  <div class="container">
-      <button class="boton" (click)="numero(1)" >1</button>
-      <button class="boton" (click)="numero(2)" >2</button>
-      <button class="boton" (click)="numero(3)" >3</button>
-      <button  id="operacion" (click)="operacion('+')" class="btn btn-warning">+</button>
+  <div class="container ">
+      <button class="boton col-sm-4 col-md-4 col-lg-4" (click)="numero(1)" >1</button>
+      <button class="boton col-sm-4 col-md-4 col-lg-4" (click)="numero(2)" >2</button>
+      <button class="boton col-sm-4 col-md-4 col-lg-4" (click)="numero(3)" >3</button>
+      <button  id="operacion" (click)="operacion('+')" class=" col-sm-4 col-md-4 col-lg-4">+</button>
   </div>
-  <div class="container">
-      <button id="zero" class="boton" (click)="numero(0)" >0</button>
-      <button  class="boton" (click)="valor('.')">.</button>
-      <button id="operacion" (click)="calcular()" class="btn btn-warning">=</button>
+  <div class="container ">
+      <button id="zero" class="boton col-sm-6 col-md-6 col-lg-6" (click)="numero(0)" >0</button>
+      <button  class="boton col-sm-4 col-md-4 col-lg-4" (click)="valor('.')">.</button>
+      <button id="operacion" (click)="calcular()" class=" col-sm-4 col-md-4 col-lg-4">=</button>
   </div>
 </div>
